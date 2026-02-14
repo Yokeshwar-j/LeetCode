@@ -1,6 +1,5 @@
 class Solution {
     public boolean backspaceCompare(String s, String t) {
-        //using double pointer no staack
         StringBuilder sb = new StringBuilder();
         StringBuilder sp = new StringBuilder();
         for(char x : s.toCharArray()){
