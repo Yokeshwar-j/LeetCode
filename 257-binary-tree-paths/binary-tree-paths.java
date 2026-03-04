@@ -22,11 +22,10 @@ class Solution {
     public void check(TreeNode root,String s){
         if(root==null)return;
         if(root.left==null && root.right==null){
-            if(s.length()!=0)s+="->"+root.val;
-            else s+=""+root.val;
+            s+=root.val;
+            //else s+=""+root.val;
             ls.add(s);return;}
-        if(s.length()!=0)s+="->"+root.val;
-        else s+=""+root.val;
+        s+=root.val+"->";
         check(root.left,s);
         check(root.right,s);
     }
