@@ -8,7 +8,6 @@ class Solution {
             while(!dq.isEmpty() && dq.getLast()<nums[j]){dq.removeLast();}
             dq.addLast(nums[j]);
             if(j-i+1==k && !dq.isEmpty()){
-                System.out.println("Current High --> "+dq.getFirst());
                 ls.add(dq.getFirst());
                 if(nums[i++]==dq.getFirst())dq.removeFirst();
             }
