@@ -7,9 +7,9 @@ class Solution {
     }
     public void sub(List<Integer> ls,List<List<Integer>> fin,int[] arr,int x){
         if(x>=arr.length){
-            if(!fin.contains(ls)){
+            //if(!fin.contains(ls)){
                 fin.add(new ArrayList<>(ls));
-            }
+            //}
             return;
         }
         ls.add(arr[x]);
