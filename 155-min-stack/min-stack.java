@@ -8,12 +8,12 @@ class MinStack {
     
     public void push(int val) {
         sm.push(val);
-        if(mm.empty() || sm.empty() || val<mm.peek())mm.push(val);
+        if(mm.empty() || val<mm.peek())mm.push(val);
         else mm.push(mm.peek());
     }
     
     public void pop() {
-        if(sm.empty())return;
+        //if(sm.empty())return;
         sm.pop();mm.pop();
     }
     
