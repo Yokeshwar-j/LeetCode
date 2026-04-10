@@ -13,13 +13,13 @@ class Solution {
         return fin.size()>=k?fin.get(k-1):"";
     }
     public void back(List<String>fin,int len,StringBuilder sb,char last){
-        if(sb.length()==len){System.out.println(sb);fin.add(sb.toString());return;}
+        if(sb.length()==len){fin.add(sb.toString());return;}
         for(int i=0;i<3;i++){
-            if(last==arr[i]){System.out.println("hi");continue;}
+            if(last==arr[i]){continue;}
             char temp = last;
             last=arr[i];
             sb.append(arr[i]);
-            System.out.println("Push->"+sb);
+            //System.out.println("Push->"+sb);
             back(fin,len,sb,last);
             last=temp;
             sb.deleteCharAt(sb.length()-1);
