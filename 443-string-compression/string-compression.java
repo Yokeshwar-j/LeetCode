@@ -6,7 +6,7 @@ class Solution {
         while(j<cr.length){
             if(cr[i]==cr[j]){j++;}
             else{
-                System.out.println("hi");
+                //System.out.println("hi");
                 int val = j-i;
                 if(val>1){
                     cr[idx++]=cr[i];
@@ -17,7 +17,7 @@ class Solution {
                 i=j;
             }
         }
-        System.out.println("hello");
+       // System.out.println("hello");
         if(j-i==1){cr[idx++]=cr[i];}
         else{
             cr[idx++]=cr[i];
