@@ -1,13 +1,13 @@
 class Solution {
     public long dividePlayers(int[] nums) {
-        long sol = 0;
         HashMap<Integer,Integer> hm = new HashMap<>();
-        int min=Integer.MAX_VALUE,max=Integer.MIN_VALUE;
+       // int min=Integer.MAX_VALUE,max=Integer.MIN_VALUE;
+        int suma=0;
         for(int x : nums){
-            min=Math.min(min,x);
-            max=Math.max(max,x);
+            suma+=x;
         }   
-        int sum = min+max;
+
+        int sum = suma/(nums.length/2);
         long prod=0;
         for(int p : nums){
             int v= sum-p;
